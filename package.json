@@ -5,6 +5,7 @@
   "main": "app.js",
   "scripts": {
     "build": "tsc -p .",
+    "deploy": "npm run build && gcloud app deploy",
     "dev": "nodemon src/app.ts",
     "start": "node dist/app.js"
   },
